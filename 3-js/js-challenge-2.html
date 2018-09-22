@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        
+        <title>JS-IF-Statements</title>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      
+          
+    </head>
+    
+        <body>
+            
+            <p>Wie viele Finger halte ich hoch?</p>
+            <p><input type="text" id="antwort"></p>
+            <p><button id="ok">Vergleichen</button></p>
+           
+           <script type="text/javascript">
+                
+              document.getElementById("ok").onclick = function(){
+                  
+                  
+                  var randomNumber = Math.random();
+                  
+                  randomNumber = randomNumber * 6;
+                  
+                  randomNumber = Math.floor(randomNumber);
+                  
+                  var input = document.getElementById("antwort").value;
+                      
+                  if (input == randomNumber){
+                      
+                      alert("Sehr gut! Du hast es erraten!");
+                      
+                  } else {
+                      
+                      alert("Nein! Die Zahl war " + randomNumber);
+                      
+                  }
+                  
+              }
+               
+               
+               
+            </script>
+            
+            
+                  
+        
+        </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+
+    <head>
+        
+        <title>JS-Arrays</title>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      
+          
+    </head>
+    
+        <body>
+            
+            <input type=text id="inhalt">
+            
+            <button id="ok">Senden</button>
+            
+           <script type="text/javascript">
+                
+               var myArray = new Array();
+               
+               myArray[0] = "Javascript";
+               
+               myArray[1] = "Python";
+               
+               var tweets = ["Javascript ist mühsam!", "Hoffentlich ist Python nicht so!"];
+               
+               tweets.push("CSS war ein Kinderspiel!");
+               
+             //  tweets.splice(1,1);
+               tweets.splice(1, 0, "Was ist denn JQuery?")
+               tweets.reverse();
+               console.log(tweets);
+               
+               document.getElementById("ok").onclick = function(){
+                   
+                   tweets.push(document.getElementById("inhalt").value);
+                   console.log(tweets);
+                   
+               }
+               
+               
+               
+            </script>
+            
+            
+                  
+        
+        </body>
+</html>

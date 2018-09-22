@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML5 und CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="meineForm" action="processform.php">
+
+        <p>Placeholder:<input type="text" placeholder="Trage deinen Namen ein"></p>
+
+        <p>Autofocus<input type="text" autofocus></p>
+
+        <p>Autocomplete aus:<input type="text" autocomplete="off"></p>
+
+        <p>Pflichtfeld:<input type="text" required></p>
+
+        <p>Email:<input type="email"></p>
+
+        <p>Pattern:<input type="text" pattern="[0-9"></p>
+
+        <datalist id="namen">
+            <option value="Ganaa">Ganaa</option>
+            <option value="Akin">Akin</option>
+            <option value="Gojko">Gojko</option>
+            <option value="Marinel">Marinel</option>
+        </datalist>
+
+        <p>Autocomplete Datalist <input type="text" list="namen"></p>
+
+        <p>Mehrere Dateien hochladen: <input type="file" multiple></p>
+
+        <p><input type="submit" value="Submit zur processform2.php" formaction="processform2.php"></p>
+
+    </form>
+
+    <p>Code außerhalb der Form<input type="text" form="meineForm"></p>
+</body>
+</html>

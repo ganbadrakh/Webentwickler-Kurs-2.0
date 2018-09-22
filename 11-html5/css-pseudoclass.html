@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML5 und CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+
+       a:hover{
+           text-decoration: overline;
+       }
+       input:focus{
+           background-color: aqua;
+       }
+       input:enabled{}
+       input:disabled{}
+       input:checked{}
+
+       p:first-child{
+           color:brown;
+       }
+       p:last-child{
+           font-size: 200%;
+       }
+       p:only-child{
+           font-weight: bold;
+       }
+       p:first-of-type{
+           text-decoration: overline;
+       }
+
+       /* last-of-type und only-of-type gehen auch */
+
+       tr:nth-child(2n-1){
+           background-color: blueviolet;
+       }
+
+       /* nth-last-child - von hinten zählend
+       nth-of-type - nur ein bestimmter Typ */
+
+       div:empty{
+           display: none;
+       }
+       p:not(.green){
+           color:darkgoldenrod;
+       }
+       :not(div){
+
+       }
+       p::first-letter{
+           font-size: 150%;
+       }
+
+       /* first-line geht auch */
+
+       a:after{
+           content: attr(href);
+       }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+        <h1>Ich bin eine Überschrift.</h1>
+        <div>
+            <h3>Hallo!</h3>
+            <p class="green">Ich bin ein Paragraph.</p>
+            <p>Ich bin im DIV</p>
+            <a id="blue" href="">Ich bin ein Link</a>
+        </div>
+
+        <div>
+            <p>First Child von P in einem anderen DIV</p>
+            <p>Last Child von P</p>
+        </div>
+        
+        <a target="_blank" href="http://google.at">Ich bin ein Link außerhalb DIV</a>
+
+        <p>Ich bin draußen</p>
+
+        <input>
+
+        <table>
+            <tr><td>Ganaa</td></tr>
+            <tr><td>Amaraa</td></tr>
+            <tr><td>Akin</td></tr>
+            <tr><td>Amy</td></tr>
+        </table>
+    
+        
+ 
+
+   <script type="text/javascript">
+
+   
+   </script>
+</body>
+</html>

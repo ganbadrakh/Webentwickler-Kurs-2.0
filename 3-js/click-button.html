@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+        
+        <title>JS-Einleitung</title>
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+          
+    </head>
+    
+        <body>
+            
+            <p id="text">Es geht um Java Script!</p>
+            <button id="myButton">Text ändern!</button>
+            
+            <p id="txt">Javascript ist...</p>
+            <button id="button1">Text verändern</button>
+            
+            
+            <p id="mehrText">Das ist etwas Text zum Testen.</p>
+            <p id="magicText">Dieser Text verschwindet, sobald du auf den Button unten drückst!</p>
+            <button id="styleText">Style den Text!</button>
+            
+           <script type="text/javascript">
+           
+                document.getElementById("myButton").onclick = function() {
+            
+                document.getElementById("text").innerHTML="<h1>Jetzt geht es um Button-Clicks als Überschrift!</h1>";
+            }
+                
+                document.getElementById("button1").onclick = function() {
+                    
+                    document.getElementById("txt").innerHTML = "Ich finde " + document.getElementById("txt").innerHTML + "SUPER!" + "<p>interessant <input type='radio' name='uni' value='uniwien'></p>" + "<p>kompliziert <input type='radio' name='uni' value='uniwien'></p>";
+                }
+                
+                document.getElementById("styleText").onclick = function() {
+                    
+                    document.getElementById("mehrText").style.color="red";
+                    document.getElementById("magicText").style.display="none";
+                }
+            
+            </script>
+            
+            
+                  
+        
+        </body>
+</html>
